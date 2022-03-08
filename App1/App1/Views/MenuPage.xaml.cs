@@ -21,6 +21,8 @@ namespace App1.Views
 
             menuItems = new List<HomeMenuItem>
             {
+                
+                new HomeMenuItem {Id = MenuItemType.ListaComputador, Title="Computador" },
                 new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
                 new HomeMenuItem {Id = MenuItemType.About, Title="About" }
             };

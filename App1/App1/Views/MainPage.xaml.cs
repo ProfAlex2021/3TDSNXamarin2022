@@ -29,6 +29,9 @@ namespace App1.Views
             {
                 switch (id)
                 {
+                    case (int)MenuItemType.ListaComputador:
+                        MenuPages.Add(id, new NavigationPage(new ListaComputadorPage()));
+                        break;
                     case (int)MenuItemType.Browse:
                         MenuPages.Add(id, new NavigationPage(new ItemsPage()));
                         break;

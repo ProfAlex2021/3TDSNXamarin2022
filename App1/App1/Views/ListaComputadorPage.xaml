@@ -8,10 +8,10 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Label Text="{Binding Processador}" />
-                        <Label Text="{Binding USB}" />
+                        <!--<Label Text="{Binding USB}" />
                         <Switch IsToggled="{Binding Atualizado}" />
                         <DatePicker Date="{Binding DataAtualizacao.Date}" />
-                        <TimePicker Time="{Binding DataAtualizacao.Time}"/>
+                        <TimePicker Time="{Binding DataAtualizacao.Time}"/>-->
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

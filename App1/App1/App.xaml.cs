@@ -12,7 +12,7 @@ namespace App1
     {
         static Banco banco;
 
-        public Banco Banco
+        public static Banco Banco
         {
             get
             {
