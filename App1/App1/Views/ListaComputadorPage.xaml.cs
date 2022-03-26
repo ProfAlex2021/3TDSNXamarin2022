@@ -16,5 +16,11 @@ namespace App1.Views
         {
             InitializeComponent();
         }
+
+        protected async override void OnAppearing()
+        {
+            lstComputador.ItemsSource = await App.Banco.ListarTodos();
+            base.OnAppearing();
+        }
     }
 }

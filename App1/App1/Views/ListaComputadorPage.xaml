@@ -4,14 +4,16 @@
              x:Class="App1.Views.ListaComputadorPage">
     <ContentPage.Content>
         <StackLayout>
-            <CollectionView ItemsSource="">
+            <CollectionView x:Name="lstComputador">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Label Text="{Binding Processador}" />
-                        <!--<Label Text="{Binding USB}" />
-                        <Switch IsToggled="{Binding Atualizado}" />
-                        <DatePicker Date="{Binding DataAtualizacao.Date}" />
-                        <TimePicker Time="{Binding DataAtualizacao.Time}"/>-->
+                        <StackLayout>
+                            <Label Text="{Binding Processador}" />
+                            <Label Text="{Binding USB}" />
+                            <Switch IsToggled="{Binding Atualizado}" />
+                            <DatePicker Date="{Binding DataAtualizacao.Date}" />
+                            <TimePicker Time="{Binding DataAtualizacao.Time}"/>
+                        </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

@@ -27,5 +27,10 @@ namespace App1.Data
                 return conexao.UpdateAsync(computador);
             }
         }
+
+        public Task<List<Computador>> ListarTodos()
+        {
+            return conexao.Table<Computador>().ToListAsync();
+        }
     }
 }
